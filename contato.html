@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+  <head>
+    <meta charset="utf-8">
+    <title>Contato</title>
+    <link rel="shorcut icon" href="imagens/icones/favicon.ico">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/menu.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <input type="checkbox" id="bt_menu">
+     <div class="button">
+       <label for="bt_menu">&#9776;</label>
+     </div>
+      <nav class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="consultoria.html">CONSULTORIA</a></li>
+            <li><a href="software.html">SOFTWARE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="espacamento">
+    <h1 id="titulo">FALE CONOSCO</h1>
+    </div>
+
+
+    <form id="Contato" action="mailto:contato@consoletech.com.br" method="post" oninput="calc_total();">
+      <fieldset id="usuario"><legend>Seus Dados</legend>
+        <p><label for="cNome">Nome:</label></p>
+      <input type="text" name="tNome" id="cNome" size="90" maxlength="30" placeholder="Nome Completo">
+      <br><br>
+      <p><label for="cMail">Email:</label></p>
+      <input type="email" name="tMail" id="cMail" size="90" maxlength="40">
+      <br><br>
+
+           <p><label for="cMsg">Fale um pouco sobre sua empresa e qual serviço deseja contratar.</label></p>
+           <textarea name="tMsg" id="cMsg" rows="15" cols="100"></textarea>
+      </fieldset>
+
+        <input type="submit" name="" value="Enviar" id="btn_enviar">
+    </form>
+
+
+    <section class="nomeDaEmpresa">
+      <img src="imagens/icones/logo.png">
+      <h1>TENHA O MELHOR EM <span>TECNOLOGIA</span><p>Instalação, configuração e desenvolvimento.</p></h1>
+    </section>
+
+
+    <footer class="footer">
+      <ul id="links">
+          <li><a href="https://web.facebook.com/desenvolvedor.Tech" target="_blank"><img src="imagens/icones/face.png"></a></li>
+          <li><a href="https://www.instagram.com/console.tech/?hl=pt-br" target="_blank"><img src="imagens/icones/insta.png"></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5511949522579&text=Ol%C3%A1%20tenho%20interesse%20em%20contratar%20a%20console-tech!" target="_blank"><img src="imagens/icones/whats.png"></a></li>
+          <p>© CONSOLE-TECH Todos os Direitos Reservados desde 2020</p>
+      </ul>
+    </footer>
+  </body>
+</html>

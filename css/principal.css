@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body, ul, p {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: #30a0a0;
+}
+span {
+    color: #30a0a0;
+}
+/*todas imagens do site são responsivas*/
+img {
+  max-width: 100%;
+  display: block;
+}
+/*menu*/
+.header {
+  width: 100%;
+}
+.header {
+  position: -webkit-sticky; /* para funcionar no Safari */
+  position: sticky;
+  top: 0;
+}
+.menu {
+  background: #171717;
+  text-align: center;
+}
+
+
+/*seção título console-tech*/
+.nomeDaEmpresa {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 40px auto 50px auto;
+}
+.nomeDaEmpresa img {
+  margin: 0 auto;
+}
+.nomeDaEmpresa h1 {
+  font-size: 20pt;
+  margin: auto;
+}
+.nomeDaEmpresa p {
+  font-size: 13pt;
+  text-align: center;
+}
+
+/*seção de textos e fotos da home*/
+#background {
+  background: #171717;
+}
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1070px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.sobre p {
+  color: white;
+}
+.sobre img {
+  max-width: 500px;
+  padding: 15px;
+}
+.sobre > div {
+  text-align: justify;
+  padding: 15px;
+}
+.resultado {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: justify;
+  padding: 100px;
+}
+.resultado h1 {
+  text-align: center;
+}
+@media (max-width: 990px) {
+  .sobre {
+    grid-template-columns: 1fr;
+  }
+  .sobre > div.sobreConsole {
+    order: -1;
+  }
+  .sobre img {
+    margin: 0 auto;
+  }
+  .sobre p {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  h1 {
+    font-size: 25pt;
+  }
+  p {
+    font-size: 15pt;
+  }
+}
+
+/*rodapé*/
+.footer {
+  text-align: center;
+  background: #171717;
+}
+#links img {
+  max-width: 45px;
+  padding: 15px;
+}
+.footer p{
+  text-align: center;
+  color: white;
+  font-size: 12pt;
+  padding-bottom: 18px;
+}
+.footer p:hover {
+  color: #30a0a0;
+}

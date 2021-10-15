@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+  <head>
+    <meta charset="utf-8">
+    <title>Consultoria</title>
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+      .lista {
+        grid-template-columns: 1fr 1fr;
+        max-width: 900px;
+        padding: 30px;
+        color: white;
+        margin-bottom: 0px;
+      }
+      .lista img {
+        max-height: 300px;
+        max-width: 380px;
+      }
+      .lista > div {
+        padding: 0px;
+      }
+      @media (max-width: 990px) {
+        .lista {
+          grid-template-columns: 1fr;
+        }
+        #resultado {
+          order: -1;
+        }
+        .lista p {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="header">
+      <input type="checkbox" id="bt_menu">
+     <div class="button">
+       <label for="bt_menu">&#9776;</label>
+     </div>
+      <nav class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="consultoria.html">CONSULTORIA</a></li>
+            <li><a href="software.html">SOFTWARE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="espacamento">
+    <h1 id="titulo">CONSULTORIA</h1>
+    </div>
+
+    <div id="background">
+    <section class="lista">
+      <img src="imagens/servicos/consulta.jpg">
+      <div>
+        <p> Para sua empresa que deseja aumentar seu fluxo de vendas, controle de estoque e gestão financeira pode estar solicitando uma consultoria dedicada ao seu segmento.
+        Hoje temos uma equipe especializada para atender farmácias de manipulação, injetáveis e drogarias, com muito treinamento e dedicação a sua empresa e seus colaboradores.
+        Não importa em qual segmento você está — farmaceutico, contábil, jurídico, comunicação, marketing — clientes querem novas ferramentas e tecnologias em uso e serviços que respondam às necessidades e tendências em suas indústrias. Mas não se desespere a Console-Tech tem a solução, <a href="contato.html"><span>agende uma visita</span></a>. </p>
+      </div>
+    </section>
+    </div>
+
+    <div id="espacamento">
+    <h1 id="titulo">O QUE NÓS PODEMOS FAZER PARA ALAVANCAR O SEU SUCESSO?</h1>
+    </div>
+
+    <div id="background">
+    <section class="lista">
+      <div>
+        <p>
+          Nós te ajudamos a verificar se o modelo de negócios que você quer é aceito pelo mercado, reduzindo as incertezas! Retiramos os gargalos existentes hoje na sua empresa, e os ajudamos a criar novos processos que maximizem a produtividade!
+          </br></br>
+          Se você já tem uma ideia, mas não conhece seus concorrentes, o seu público, e se é financeiramente viável, nós te ajudamos a ter essa segurança! Temos soluções específicas para aqueles que visam aumento de receita e reorganização do RH. </p>
+      </div>
+      <img src="imagens/servicos/resultado.jpg" id="resultado">
+    </section>
+    </div>
+
+    <section class="nomeDaEmpresa">
+      <img src="imagens/icones/logo.png">
+      <h1>TENHA O MELHOR EM <span>TECNOLOGIA</span><p>Instalação, configuração e desenvolvimento.</p></h1>
+    </section>
+
+    <footer class="footer">
+      <ul id="links">
+          <li><a href="https://web.facebook.com/desenvolvedor.Tech" target="_blank"><img src="imagens/icones/face.png"></a></li>
+          <li><a href="https://www.instagram.com/console.tech/?hl=pt-br" target="_blank"><img src="imagens/icones/insta.png"></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5511949522579&text=Ol%C3%A1%20tenho%20interesse%20em%20contratar%20a%20console-tech!" target="_blank"><img src="imagens/icones/whats.png"></a></li>
+          <p>© CONSOLE-TECH Todos os Direitos Reservados desde 2020</p>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#titulo{
+  color: #30a0a0;
+}
+#Contato{
+  width: 780px;
+  margin: auto;
+}
+#btn_enviar{
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  border-color: #300a0a;
+  background-color: #222;
+  color: #30a0a0;
+  font-weight: bold;
+  font-size: 12pt;
+}
